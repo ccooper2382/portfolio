@@ -1,0 +1,29 @@
+.character__portrait {
+    flex: 20%;
+}
+
+.character__Title {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+
+.character__Stats {
+    flex: 75%;
+    margin: 0 1em;
+
+    @media (width < 725px) {
+        flex: 100%;
+        margin: 0;
+    }
+}
+
+.character__Stats h2 {
+    margin: 0;
+}
+
+.character__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

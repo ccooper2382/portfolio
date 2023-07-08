@@ -1,0 +1,13 @@
+.location__block {
+    display: flex;
+    width: 75%;
+}
+
+.location__stats {
+    width: 50%;
+
+}
+
+.location__stats h2 {
+    margin: .5em 0;
+}

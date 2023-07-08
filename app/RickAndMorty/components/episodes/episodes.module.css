@@ -1,0 +1,11 @@
+.episodes {
+    width: 95%;
+}
+
+.episodes h2 {
+    margin: .5em 0;
+}
+
+.episodeList:not(:first-of-type)::before {
+    content: ", ";
+}
