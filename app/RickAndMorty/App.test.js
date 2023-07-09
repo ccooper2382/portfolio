@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import RickMort from './page';
+import RickMort from './components/RickAndMorty/RickAndMorty';
 
 test('renders learn react link', () => {
   render(<RickMort />);

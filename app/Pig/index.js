@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Pig from './page';
+import Pig from './components/Main/Pig';
 import reportWebVitals from './reportWebVitals';
 
 

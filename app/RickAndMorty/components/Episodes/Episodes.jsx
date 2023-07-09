@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import EpisodesList from "./EpisodesList";
-import ErrorComponent from "../error/ErrorComponent";
+import ErrorComponent from "@/app/RickAndMorty/components/Error/ErrorComponent";
 
 
 function Episodes({episodes}) {

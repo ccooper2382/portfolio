@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./title.module.css";
+import styles from "./characterTitle.module.css";
 
-function TitleStats({name, status, species, type, gender}) {
+function CharacterTitleStats({name, status, species, type, gender}) {
 
     return (
         <section className={styles.character__Stats}>
@@ -23,4 +23,4 @@ function TitleStats({name, status, species, type, gender}) {
     );
 }
 
-export default TitleStats;
+export default CharacterTitleStats;

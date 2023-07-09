@@ -1,11 +1,11 @@
 "use client"
 import {useState} from "react";
 import React from "react";
-import PlayerTile from "./components/playerTile/playerTile";
-import StartPage from "./components/startPage/startPage";
-import Victory from "./components/victoryPage/victory";
-import RollTile from "./components/centerTile/rollTile";
-import classes from "./components/Layout.module.css"
+import PlayerTile from "@/app/Pig/components/PlayerTile/PlayerTile";
+import StartPage from "@/app/Pig/components/StartPage/StartPage";
+import Victory from "@/app/Pig/components/VictoryPage/Victory";
+import RollTile from "@/app/Pig/components/CenterTile/RollTile";
+import classes from "../Layout.module.css"
 
 
 function Pig() {
@@ -41,7 +41,7 @@ function Pig() {
     const [winner, setWinner] = useState(null)
 
     /**
-     * Generic message for the message element on the roll tile.  Could be an error from the save or
+     * Generic message for the message element on the roll tile.  Could be an Error from the save or
      * it could state the game has been saved successfully
      */
     const [message, setMessage] = useState('')
@@ -185,7 +185,7 @@ function Pig() {
     }
 
     /**
-     * handles each roll of the dice setting the currentRoll and currentTotal
+     * handles each roll of the Dice setting the currentRoll and currentTotal
      */
     const handleCurrentRollChange = () => {
         let roll = rollEm(1, 6)

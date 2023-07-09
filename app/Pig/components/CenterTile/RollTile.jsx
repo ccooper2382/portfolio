@@ -1,6 +1,6 @@
 import React from 'react';
-import CurrentRoll from "./currentRoll";
-import TotalScore from "./totalScore";
+import CurrentRoll from "./CurrentRoll";
+import TotalScore from "./TotalScore";
 import classes from "../Layout.module.css";
 
 

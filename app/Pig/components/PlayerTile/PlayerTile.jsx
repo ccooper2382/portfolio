@@ -1,6 +1,6 @@
-import React from 'react';
-import RollButton from "./rollButton";
-import SaveScoreButton from "./saveScoreButton";
+import React from 'react'
+import RollButton from "./RollButton";
+import SaveScoreButton from "./SaveScoreButton";
 import classes from "./playerTile.module.css"
 
 
