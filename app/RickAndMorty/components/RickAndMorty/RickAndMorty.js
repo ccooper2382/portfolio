@@ -4,6 +4,7 @@ import {Fragment, useEffect, useState} from "react";
 import CharacterList from "@/app/RickAndMorty/components/CharacterList/CharacterList";
 import ErrorComponent from "@/app/RickAndMorty/components/Error/ErrorComponent";
 
+
 function RickMort() {
     const [characters, setCharacters] = useState([])
     const [info, setInfo] = useState({})
@@ -25,7 +26,7 @@ function RickMort() {
         fetch(url)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`Network response was not ok. Response status: ${response.status}`)
+                    throw new Error(`Response status: ${response.status}`)
                 }
                 return response.json()
             })
@@ -100,7 +101,6 @@ function RickMort() {
     const updateInfo = (info) => {
         setInfo(info)
     }
-
 
     if (error === '') {
         return <Fragment>
