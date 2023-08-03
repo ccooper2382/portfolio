@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import profilePic from '/public/profilepic/TagonLogoLayered.png'
 import htmlJsCss
     from '/public/toolboxLogos/png-clipart-website-development-html-cascading-style-sheets-javascript-css3-html-logo-web-design-text.png'
-import reactLogo from '/public/toolboxLogos/222-2224705_react-js-logo.png'
+import reactLogo from '/public/toolboxLogos/react.webp'
 import nextLogo from 'public/toolboxLogos/Getting-Started-with-NextJS.jpg'
 import gitLogo from 'public/toolboxLogos/2color-lightbg@2x.png'
 import Link from "next/link";
@@ -11,20 +11,20 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main>
-            <article className={styles.article__flexContainer}>
+            <article className={ `${styles.article__flexContainer} ${styles.bio__block} `}>
                 <section className={styles.bio__flexItem}>
-                    <h1>Greetings!</h1>
+                    <h1 className={styles.bio__heading}>Greetings!</h1>
                     <aside>
                         <Image src={profilePic} alt="picture of author" width={100} height={100}/>
-                        <p> I&#39;m Caleb, a dedicated web developer with an unconventional journey that has led me from
+                        <p className={styles.bio__text}> I&#39;m Caleb, a dedicated web developer with an unconventional journey that has led me from
                             the driver&#39;s
                             seat of a bus to the dynamic world of web development. Let me share a bit about my story and
                             what drives my
                             passion for creating exceptional web experiences.</p>
                     </aside>
                 </section>
-                <section className={styles.bio__flexItem}>
-                    <h1>My Toolbox</h1>
+                <section className={`${styles.bio__flexItem} ${styles.toolbox} `}>
+                    <h1 className={styles.bio__heading}>My Toolbox</h1>
                     <aside>
                         <div>
                             <Image src={htmlJsCss} alt='Html, Css and JavaScript' width='auto' height={100}/>
@@ -38,12 +38,14 @@ export default function Home() {
 
                 </section>
             </article>
-            <article>
-                <h1>Projects</h1>
+            <article className={`${styles.article__flexContainer} ${styles.project__block}`}>
+                <h1 className={styles.project__heading}>Projects</h1>
                 <nav className={styles.article__flexContainer}>
+
                     <section className={styles.project__flexItem}>
+
                         <h2>
-                            <Link href="/Pig">Let&#39;s Play Pig!</Link>
+                            <Link href="/Pig">Let&#39;s Play PIG!</Link>
                         </h2>
                         <p>Let&#39;s Play PIG! is a web-based dice game that challenges players to accumulate points by
                             rolling the die.
