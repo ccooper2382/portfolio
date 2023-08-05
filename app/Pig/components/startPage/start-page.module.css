@@ -1,0 +1,19 @@
+.start__content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start__buttons {
+    margin: 0 auto;
+    width: 50%;
+}
+.start__form {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.start__input {
+    width: 50%;
+    margin: 0 auto 1em auto;
+}

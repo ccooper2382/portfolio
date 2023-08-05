@@ -18,9 +18,8 @@ export default function Home() {
                         <Image src={profilePic} alt="picture of author" width={100} height={100}/>
                         <p className={styles.bio__text}> I&#39;m Caleb, a dedicated web developer with an unconventional journey that has led me from
                             the driver&#39;s
-                            seat of a bus to the dynamic world of web development. Let me share a bit about my story and
-                            what drives my
-                            passion for creating exceptional web experiences.</p>
+                            seat of a bus to the dynamic world of web development. Let me share a bit about my
+                            adventure learning to create exceptional web experiences.</p>
                     </aside>
                 </section>
                 <section className={`${styles.bio__flexItem} ${styles.toolbox} `}>
